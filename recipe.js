@@ -1,10 +1,10 @@
 module.exports = class Recipe {
   constructor(id) {
-    this.id = id;
+    this.id = Number(id);
     this.name = null;
   }
   async hydrate() { // Pretend DB Lookup
-    this.name = `Recipe ${this.id}`;
+    this.name = `Recipe: #${this.id}`;
   }
   toJSON() {
     return {
