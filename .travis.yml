@@ -2,6 +2,6 @@ language: node_js
 node_js:
   - "14"
 install:
-  -npm install
+  - npm install
 script:
   - PORT=0 npm test
